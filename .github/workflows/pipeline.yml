@@ -1,9 +1,8 @@
 name: Build Service Tracker UI Container
-
+on: [push]
 env:
   DOCKER_REGISTRY: cdwms.azurecr.io
   IMAGE_NAME: modernclouddev/service-tracker-ui
-
 jobs:
   build:
     runs-on: ubuntu-latest
